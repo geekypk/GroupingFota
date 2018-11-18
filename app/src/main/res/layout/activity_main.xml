@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/phnTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/horizontal_margin"
+                android:layout_marginEnd="@dimen/horizontal_margin"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:layout_marginRight="@dimen/horizontal_margin"
+                android:layout_marginStart="@dimen/horizontal_margin"
+                android:layout_marginTop="@dimen/horizontal_margin"
+                android:text="@string/enter_phone_number"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/phnEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/horizontal_margin"
+                android:layout_marginTop="@dimen/horizontal_margin"
+                android:layout_marginEnd="@dimen/horizontal_margin"
+                android:layout_marginStart="@dimen/horizontal_margin"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:layout_marginRight="@dimen/horizontal_margin"
+                android:layout_weight="1"
+                android:inputType="phone"
+                android:textSize="15sp"
+                android:text=""
+                tools:ignore="LabelFor" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+        <RadioButton
+            android:id="@+id/smsRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/horizontal_margin"
+            android:layout_marginStart="@dimen/horizontal_margin"
+            android:layout_marginLeft="@dimen/horizontal_margin"/>
+            <TextView
+                android:id="@+id/smsTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sms"
+                android:textAllCaps="true"
+                android:layout_marginBottom="@dimen/horizontal_margin"
+                android:layout_marginEnd="@dimen/horizontal_margin"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:layout_marginRight="@dimen/horizontal_margin"
+                android:layout_weight="1"
+                android:textSize="15sp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/mmsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/horizontal_margin"
+            android:padding="@dimen/horizontal_margin"
+            android:text="@string/send_mms"
+            android:onClick="sendMMS"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/horizontal_margin"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginEnd="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:layout_marginTop="@dimen/horizontal_margin"
+            android:layout_marginBottom="@dimen/horizontal_margin"
+            android:background="@android:color/darker_gray" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/urlTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/horizontal_margin"
+            android:layout_marginEnd="@dimen/horizontal_margin"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:layout_marginStart="@dimen/horizontal_margin"
+            android:layout_marginTop="@dimen/horizontal_margin"
+            android:text="@string/enter_url"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/urlEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/horizontal_margin"
+            android:layout_marginTop="@dimen/horizontal_margin"
+            android:layout_marginEnd="@dimen/horizontal_margin"
+            android:layout_marginStart="@dimen/horizontal_margin"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:layout_weight="1"
+            android:inputType="textUri"
+            android:textSize="15sp"
+            android:text=""
+            tools:ignore="LabelFor" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/browserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/horizontal_margin"
+        android:layout_marginBottom="@dimen/horizontal_margin"
+        android:text="@string/load_url"
+        android:onClick="loadUrl"/>
+        <TextView
+            android:id="@+id/versionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/horizontal_margin"
+            android:layout_marginEnd="@dimen/horizontal_margin"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:layout_marginStart="@dimen/horizontal_margin"
+            android:layout_marginTop="@dimen/horizontal_margin"
+            android:text="@string/version"
+            android:textAllCaps="true"
+            android:textSize="15sp" />
+    </LinearLayout>
+</ScrollView>

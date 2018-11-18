@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Grouping Fota</string>
+    <string name="enter_phone_number">Enter Phone Number:</string>
+    <string name="send_mms">Send MMS</string>
+    <string name="enter_url">Enter URL:</string>
+    <string name="load_url">Load URL</string>
+    <string name="version">Version 1.4.0</string>
+    <string name="sms">sms</string>
+</resources>
